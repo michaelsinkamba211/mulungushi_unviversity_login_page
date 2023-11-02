@@ -179,6 +179,10 @@ section main form{
     width: 100%;
 }
 
+input{
+    text-size-adjust: 100%;
+  }
+
 section main form label{
     display: inline-block;
     width: 25%;
