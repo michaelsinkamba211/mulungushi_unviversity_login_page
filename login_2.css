@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Prompt&display=swap");
+/* style.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+:root {
+    --main-color: #033a80;
+    --bg-color: #fff;
+    --text-color: #0f0c27;
+    --orther-color: rgb(213, 20, 20);
+    --hover: hsl(260, 100%, 51%);
+    --medium-font: 1.8rem;
+    --p-font: 0.97rem;
+    --top-bg: #f8f8f8;
+    --sub-font: 1.2rem;
+    --sub-sub-font: 0.9rem;
+    --logo-font: 1rem;
+  }
+
+
+body, html {
+    font-family: "Prompt", sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+    display: grid;
+    /* place-items: center; */
+    /* font-size: 90%; */
+    overflow-x: hidden;
+}
+
+@media screen and (min-width:650px){
+    body{
+        height: 100dvh;
+    }
+}
+
+.main_container{
+    /* height: 95vh; to be removed when content is added */
+    max-width:960px;
+    min-height: 300px;
+    margin: 0 auto;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 10px; /* dont add margin or padding on the inside boxes*/;
+}
+
+body{
+    background: url('./images/mulungushi_image_banner.jpg') center/cover no-repeat;
+    height: 100%;
+}
+
+/* no image for the mobile view */
+
+/* image tobe put at tablet and dsktop views */
+
+
+.main_container img{
+    width: 80px;
+    margin-right: 10px;
+}
+
+/* holds mu tittle and logo */
+
+header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+
+header .tittle_header{
+    display: flex;
+    align-items: center;
+}
+
+.tittle_header .titles{
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+/* holds links to orther pages */
+header nav{
+    background-color: #4b51aa;
+}
+
+header nav ul{
+    display: flex;
+    /* justify-content: center; */
+}
+
+header nav ul a{
+    color: #fff;
+    display: block;
+    padding: 15px 5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* we style the section containing login box and application box */
+
+
+section{
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+section main,
+section aside{
+    width: 100%;
+    padding: 15px;  
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+}
+
+
+@media all and (min-width:750px){
+    section{
+        flex-direction: row;
+    }
+    
+    section main,
+    section aside{
+    width: 50%;
+    height: 300px;
+    /* background-color: red; */
+    }
+
+    header nav ul a{
+        padding: 15px;
+    }
+
+    .tittle_header .titles{
+        font-size: 1.2rem;
+    }
+}
+
+/* main is the login box */
+section main{
+    /* border: 1px solid blue; */
+}
+
+section main h4{
+    text-transform: uppercase;
+}
+
+section main p{
+    margin: 5px 0;
+}
+
+
+/* form styles */
+section main form{
+    /* background-color: red; */
+    margin-bottom:15px;
+    width: 100%;
+}
+
+section main form label{
+    display: inline-block;
+    width: 25%;
+}
+
+section main form input,
+section main form button{
+    margin: 2px;
+    height: 25px;
+    width: 190px;
+    width: 65%;
+    border:1px solid #ccc;
+}
+
+section main form button{
+    display: flex;
+    align-items: right;
+    display: inline-block;
+    background-color: #bebebe;
+    font-weight: bold;
+}
+
+section main form #login{
+    opacity: 0;
+}
+
+#if_forgot{
+    text-decoration: underline;
+}
+
+
+/* aside is the application box */
+section aside{
+    /* border: 1px solid green; */
+}
+
+section aside #description{
+    text-align: left;
+    width: 100%;
+    margin: 10px 0;
+}
+
+section aside a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+section aside #online_application{
+    background-color: #4b51aa;
+}
+
+section aside #short_course{
+    background-color: #cd4837;
+}
+
+/* footer style */
+footer{
+    background-color: var(--main-color);
+    background-color: #fff;
+    margin: 20px 0;
+    border-top: 2px solid #bebebe;
+    width: 100%;
+    padding: 10px;
+}
+
+footer p{
+    margin: 7px 0;
+}
+
