@@ -12,6 +12,7 @@
     overflow-x: none;
     text-decoration: none;
     list-style: none;
+    overflow-x: hidden;
 }
 
 
@@ -32,6 +33,7 @@
 
 body, html {
     font-family: "Prompt", sans-serif;
+    overflow-x: hidden;
 }
 
 body{
