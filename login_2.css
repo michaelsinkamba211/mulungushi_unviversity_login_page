@@ -98,11 +98,13 @@ header .tittle_header{
 /* holds links to orther pages */
 header nav{
     background-color: #4b51aa;
+    
+    width: 100% !important;
 }
 
 header nav ul{
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-around;
 }
 
 header nav ul a{
